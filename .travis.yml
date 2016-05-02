@@ -6,7 +6,7 @@ node_js:
 before_script:
 - npm install
 script:
-- npm run build
+- npm run test 
 deploy:
     skip_cleanup: true
     provider: npm
