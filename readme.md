@@ -1,6 +1,8 @@
 tommy
 =====
 
+[![Build Status](https://travis-ci.org/VeriShip/tommy.svg?branch=master)](https://travis-ci.org/VeriShip/tommy)
+
 A simple command line tool written in [node](https://nodejs.org) that helps [VeriShip](https://twitter.com/veriship)'s Data Science team manage their running [EMR](https://aws.amazon.com/elasticmapreduce/) clusters in [AWS](https://aws.amazon.com/)
 
 Install
