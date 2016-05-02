@@ -6,13 +6,15 @@ node_js:
 before_script:
 - npm install
 script:
-- npm run test 
+- npm run test
 deploy:
-    skip_cleanup: true
-    provider: npm
-    email: npm@niteoholdings.com
-    on:
-        tags: true
-        all_branches: true
-        repo: VeriShip/tommy
-        node: '4.3'
+  skip_cleanup: true
+  provider: npm
+  email: npm@niteoholdings.com
+  on:
+    tags: true
+    all_branches: true
+    repo: VeriShip/tommy
+    node: '4.3'
+  api_key:
+    secure: ojcpsHkU/gViKDL6celhXSaMbSirs7AGLlCjUJZLwvEjPMRgxMTucvL4P/GSlVzIPJ8NoKtECDfsd4uumBV9MekdhXXywexVQvU5p+avIvxmY/W/W0PbutScu4KWvkM4zLU6SsIFtpCV2xjBYNKRaFfgnOUCNw6clWKBO4BGL9BJQflm52QDKtH4ecqdMx0cSYs86o/63XaVpHb5VItrSXpj5/8NwMp83pLS/FiECyyJjzMfrbFUK/17Ea/toMNKynbN5jbD9BhG5JB1h10NvN8UHNRwDX+baDbL6SKCDTeCsYHTxbHmTqcyvG+Me5gICzWAcgy7o2LAJ+cnYJQC9m49mKWowXCMrTD0/QfA2sYqpnyMVpnKr4xrPMBlkbQJivPwoUzO6bMd3OcZUjwSkCwRdcPL7G2VIZEZKpon3zLgFqQs86mddL6gfRbXtGJAMOSXw9j9Q0QDiRGZWLhtFcvlSECqseIKfCvxclnbIH+LudipIx3zHbDF7DEHKq0f4cjJhOvFOuCowATjZ+dln++ubODOqyv0DI0+dMZxnpLc3ZEq1J7cYf5BuJVqUrDp6GaaehzeIcrJgflfxd95rMJhuFcTsZztm9bCpEHIZ/6iNDWTQbGlPOVhVcqAgOsTaQ0YcDBaDO5y4/aEUTQu66xtfjfaJz5kCLDA0xb4gp4=
