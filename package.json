@@ -6,6 +6,10 @@
   "keywords": [
 	  "aws", "emr", "automation"
   ],
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/VeriShip/tommy.git"
+	},
   "scripts": {
     "test": "grunt -v test",
     "deploy": "grunt -v deploy",
