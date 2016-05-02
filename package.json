@@ -1,0 +1,39 @@
+{
+  "name": "tommy",
+  "version": "1.0.0",
+  "description": "A tool to automate AWS EMR jobs",
+  "main": "tommy.js",
+  "keywords": [
+	  "aws", "emr", "automation"
+  ],
+  "scripts": {
+    "test": "grunt -v test",
+    "deploy": "grunt -v deploy",
+    "bump": "grunt bump-only -v",
+    "dev": "grunt -v test --mochareporter spec",
+    "run": "node ./bin/src/tommy.js"
+  },
+  "author": "The Energy Bus",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.7.0",
+    "grunt-cli": "^1.1.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-niteo-spawn": "0.0.6",
+    "mocha": "^2.4.5",
+    "mocha-junit-reporter": "^1.10.0",
+    "should": "^8.3.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.2.47",
+    "check-types": "^6.0.0",
+    "commander": "^2.9.0",
+    "lodash": "^4.7.0",
+    "moment": "^2.12.0",
+    "q": "^1.4.1"
+  }
+}
