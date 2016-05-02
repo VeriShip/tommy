@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '4'
+- '5'
+- '6'
+before_script:
+- npm install
+script:
+- npm run build
+deploy:
+    skip_cleanup: true
+    provider: npm
+    email: npm@niteoholdings.com
+    on:
+        tags: true
+        all_branches: true
+        repo: VeriShip/tommy
+        node: '4.3'
