@@ -15,7 +15,7 @@ Credentials
 
 Tommy communicates with AWS.  Because of this, the current user needs to be an authorized user in AWS.  If you do not have an AWS account or access to one, you can signup for free.  (VeriShip is not resposible for any charges that may occur.)
 
-You cannot pass your AWS credentials to Tommy in any way, so you need to setup a *credentials* file in your `~/.aws` directory.  See this guide for an example: [Configuration the SDK in Node.js](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html)
+You cannot pass your AWS credentials to Tommy in any way, so you need to setup a *credentials* file in your `~/.aws` directory.  See this guide for an example: [Configuring the SDK in Node.js](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html)
 
 Region
 ------
