@@ -1,0 +1,6 @@
+gruntfile.js
+src/
+tests/
+bin/tests/
+node_modules
+.travis.yml

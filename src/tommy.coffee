@@ -1,3 +1,6 @@
+`#!/usr/bin/env node
+`
+
 'use strict'
 
 program = require 'commander'

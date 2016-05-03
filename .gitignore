@@ -41,3 +41,9 @@ jspm_packages
 
 #Ignore compiled output
 bin/
+
+#ignore unziped package
+package/
+
+#ignore package
+*.tgz

@@ -35,9 +35,18 @@ module.exports = function(grunt) {
 		coffee: {
 			compile: {
 				expand: true,
-				src: ['./src/**/*.coffee', './tests/**/*.coffee'],
+				src: ['./src/**/*.coffee', './tests/**/*.coffee', '!./src/tommy*.coffee'],
 				dest: 'bin',
 				ext: '.js'
+			},
+			topLevel: {
+				expand: true,
+				src: ['./src/tommy*.coffee'],
+				dest: 'bin',
+				ext: '.js',
+				options: {
+					bare: true
+				}
 			}
 		},
 		mochaTest: {
