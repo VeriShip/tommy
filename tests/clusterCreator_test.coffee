@@ -137,21 +137,6 @@ describe 'clusterCreator', ->
 						emr.runJobFlowCalls[0].Tags[0].Value.should.equal(wi.getName())
 						done()
 
-		it 'should update the name tag if it does exist', (done) ->
-
-			emr = new emrStub()
-			wi = new workstationIdentifier()
-			extender =
-				extend: ->
-					return { Tags: [ { Key: "Name", Value: "gibberish" } ] }
-
-			cc = new clusterCreator(emr, wi, null, null, extender)
-
-			cc.create()
-				.done =>
-						emr.runJobFlowCalls[0].Tags[0].Value.should.equal(wi.getName())
-						done()
-
 		it 'should pass the command line variables to the template resolver', (done) ->
 
 			emr = new emrStub()

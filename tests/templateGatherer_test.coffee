@@ -2,6 +2,7 @@
 
 should = require 'should'
 Gatherer = require '../src/templateGatherer'
+path = require 'path'
 
 describe 'TemplateGatherer', ->
 	context 'constructor', ->
@@ -27,8 +28,8 @@ describe 'TemplateGatherer', ->
 					return { isFile: -> return true }
 
 			expected = [
-				'/cwd/one.tommy',
-				'/cwd/two.tommy'
+				path.normalize('/cwd/one.tommy'),
+				path.normalize('/cwd/two.tommy')
 			]
 
 			target = new Gatherer(fs)
