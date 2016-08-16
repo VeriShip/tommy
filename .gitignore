@@ -47,3 +47,6 @@ package/
 
 #ignore package
 *.tgz
+
+# Ignore test results
+test-results.xml
