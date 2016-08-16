@@ -29,7 +29,7 @@ class ClusterCreator
 		params.Name = @workstationIdentifier.getName()
 		nameTag = _.find(params.Tags, { Key: 'Name' })
 		if not params.Tags then params.Tags = [ ]
-		if nameTag then nameTag.Value = params.Name else params.Tags.push({ Key: 'Name', Value: params.Name })
+		if not nameTag then params.Tags.push({ Key: 'Name', Value: params.Name })
 
 		runJob = @q.nbind(@emr.runJobFlow, @emr)
 		runJob params
