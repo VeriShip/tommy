@@ -8,7 +8,7 @@ A simple command line tool written in [node](https://nodejs.org) that helps [Ver
 Install
 -------
 
-	npm install -g tommy
+	npm install -g vs-tommy
 
 Credentials
 ----------
