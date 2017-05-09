@@ -14,7 +14,8 @@ class Extender
 			if not check.object(item)
 				throw Error('You must supply an array of objects as sources.')
 
-		sources.splice(0, 0, @params)
+		if not sources.length
+			sources.splice(0, 0, @params)
 		
 		merge = _.spread(_.merge)
 		return merge(sources)

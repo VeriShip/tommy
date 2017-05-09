@@ -32,7 +32,7 @@ describe 'Extender', ->
 				target = new Extender()
 				target.extend("hello")
 
-		it 'should merge object with the default object', ->
+		it 'should not merge non-empty object with the default object', ->
 
 			params =
 				a: true
@@ -50,9 +50,27 @@ describe 'Extender', ->
 			expected =
 				a: false
 				b:
-					c: false
 					d: 1
 				h: "hello"
+
+			target = new Extender(null, params)
+			should.deepEqual(target.extend([source0, source1]), expected)
+
+		it 'should merge empty object with the default object', ->
+
+			params =
+				a: true
+				b:
+					c: false
+
+			source0 =
+
+			source1 =
+
+			expected =
+				a: true
+				b:
+					c: false
 
 			target = new Extender(null, params)
 			should.deepEqual(target.extend([source0, source1]), expected)
