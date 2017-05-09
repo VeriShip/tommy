@@ -56,7 +56,9 @@ For example:  Let's say you wanted to create 4 instances in your cluster instead
 	{
 		Instances: {
 			InstanceCount: <%= count %>
+			...
 		}
+		...
 	}
 
 When you're ready to create the cluster and know you want 10 instances in the group, you would run the following in the working directory of your tommy file/s:
