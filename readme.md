@@ -29,7 +29,9 @@ Creating
 
 Tommy is built on top of the [node AWS SDK](https://aws.amazon.com/sdk-for-node-js/). Creating a cluster from that SDK requires that all options in creating that cluster be defined in a JSON object.  Tommy uses this fact to streamline the creation process by allowing the user to define sepperate templates in the current working directory.  Tommy reads in those templates (tommy files), merges them, applies variables and then presents the final JSON object to the SDK for creation.
 
-By default, Tommy uses the following template which all other provided templates are merged against.
+If a user provides any templates (tommy files), then only those templates will be used to create the final JSON output to present to the SDK. 
+
+However, if no templates are provided by the user, then Tommy uses the following template by default:
 
 	{
 	  Instances: {
