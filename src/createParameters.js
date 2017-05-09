@@ -4,10 +4,7 @@
 module.exports = {
   Instances: {
     HadoopVersion: '2.7.1',
-    InstanceCount: 3,
-    KeepJobFlowAliveWhenNoSteps: true,
-    MasterInstanceType: 'm1.small',
-    SlaveInstanceType: 'm1.small'
+    KeepJobFlowAliveWhenNoSteps: true
   },
   JobFlowRole: "EMR_EC2_DefaultRole",
   ServiceRole: "EMR_DefaultRole",
